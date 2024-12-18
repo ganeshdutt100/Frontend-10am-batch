@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .main {
+        display: flex;
+        gap: 20px;
+        flex-direction: row-reverse;
+      }
+
+      .main img {
+        width: 300px;
+      }
+
+      nav {
+        border-style: groove;
+        border-color: aqua;
+        border-width: ;
+        border-radius: 7%;
+        display: flex;
+        background-color: black;
+        color: white;
+        padding: 20px;
+        margin: 5px;
+        /* justify-content: start;
+        justify-content: end;
+        justify-content: center; */
+        justify-content: space-around;
+      }
+      ul {
+        display: flex;
+        gap: 30px;
+      }
+      .text {
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">LOGO</div>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Services</li>
+      </ul>
+    </nav>
+
+    <div class="main">
+      <img
+        style="margin-top: 5px; border-radius: 3%; margin-right: 5px"
+        src="https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?ga=GA1.1.1872758581.1724841441&semt=ais_hybrid"
+        class="img-fluid rounded-top"
+        alt=""
+      />
+
+      <div class="text">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
+          officiis, vero neque perferendis sapiente alias reprehenderit eius!
+          Eos sit praesentium, officiis officia illo eveniet, expedita dolores
+          quibusdam nam maxime a?
+        </p>
+        <button>Click me</button>
+      </div>
+    </div>
+  </body>
+</html>
