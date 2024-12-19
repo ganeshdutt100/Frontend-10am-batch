@@ -1,47 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <pre>
-        HTML Questions
-1. Which of the following is not a valid HTML tag?
-a) <section>
-b) <aside>
-c) <div>
-d) <styleclass>
-Answer: d) <styleclass>
+<html>
+  <head>
+    <title>HTML</title>
 
-2. What is the purpose of the alt attribute in the <img> tag?
-a) To specify the source of the image
-b) To define alternative text for the image
-c) To align the image in the center
-d) To apply styles to the image
-Answer: b) To define alternative text for the image
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+        color: white;
+        padding: 20px;
+      }
+      ul {
+        display: flex;
+        gap: 30px;
+        list-style-type: none;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
 
-3. Which attribute is used to group table rows in HTML?
-a) <tbody>
-b) <tfoot>
-c) <thead>
-d) <tr>
-Answer: a) <tbody>
+      .sec {
+        display: flex;
+        gap: 40px;
+        padding: 20px;
+        margin-top: 40px;
+      }
+      .text {
+        margin-top: 100px;
+      }
+      .text p {
+        line-height: 1.5;
+      }
+      .Image img {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+      }
 
-4. Which HTML tag is used to define a dropdown list?
-a) <select>
-b) <dropdown>
-c) <option>
-d) <list>
-Answer: a) <select>
+      button {
+        margin-top: 10px;
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+      }
+      button:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">LOGO</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+    </nav>
 
-5. What type of element is <h1> in HTML?
-a) Inline
-b) Block
-c) Void
-d) None of the above
-Answer: b) Block
-    </pre>
-</body>
+    <!-- Section1 -->
+    <div class="sec">
+      <div class="text">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam illo
+          nemo itaque ut, dolor repellat perspiciatis deserunt dolores nostrum
+          odit totam sunt nulla fugiat officia tenetur inventore unde enim quis!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam illo
+          nemo itaque ut, dolor repellat perspiciatis deserunt dolores nostrum
+          odit totam sunt nulla fugiat officia tenetur inventore unde enim
+          quis!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam
+          illo nemo itaque ut, dolor repellat perspiciatis deserunt dolores
+          nostrum odit totam sunt nulla fugiat officia tenetur inventore unde
+          enim quis!
+        </p>
+        <button onclick="init()">Click me</button>
+        <button>Click me</button>
+      </div>
+
+      <div class="Image">
+        <img src="https://ganeshdutt.netlify.app/g-bg-new.png" alt="" />
+      </div>
+    </div>
+
+    <script>
+      function init() {
+        alert("i am clicked!");
+      }
+    </script>
+  </body>
 </html>
