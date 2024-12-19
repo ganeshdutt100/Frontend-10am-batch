@@ -37,6 +37,33 @@
       .bar {
         display: flex;
       }
+
+      /* section1 */
+      .sec1 {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 40px;
+        padding: 20px;
+        justify-content: center;
+      }
+      /* .text {
+        margin-top: 100px;
+      } */
+      .image img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+      }
+
+      button {
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
       @media only screen and (min-width: 500px) {
         .bar {
           display: none;
@@ -44,8 +71,17 @@
         ul {
           display: flex;
         }
+
+        .sec1 {
+          flex-direction: row;
+          gap: 10px;
+        }
+
+        .text {
+          margin-top: 59px;
+          line-height: 1.5;
+        }
       }
-      animation-fill-mode: forwards;
     </style>
   </head>
   <body>
@@ -72,5 +108,24 @@
         <i class="fa-solid fa-bars bar"></i>
       </div>
     </nav>
+
+    <div class="sec1">
+      <div class="text">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla totam,
+          enim accusantium culpa, dolorum magni eligendi dignissimos in quis
+          voluptatibus repellat! Ut optio eligendi iste illum veritatis
+          molestiae eum. Hic?
+        </p>
+        <button>Learn More</button>
+      </div>
+      <div class="image">
+        <img
+          src="https://img.freepik.com/free-photo/close-up-image-programer-working-his-desk-office_1098-18707.jpg?ga=GA1.1.1872758581.1724841441&semt=ais_hybrid"
+          alt=""
+        />
+      </div>
+    </div>
   </body>
 </html>
